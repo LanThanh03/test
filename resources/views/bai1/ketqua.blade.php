@@ -1,0 +1,1 @@
+<h1>Chuỗi kí tự sau khi chuyển đổi: {{ $chuoihoa }}</h1>
