@@ -75,4 +75,9 @@ class ViDuController extends Controller{
         return view('bai3.form');
     }
 
+    #Lyn
+    function chucnang1(){
+        echo"ai mà biếc!";
+    }
+
 }

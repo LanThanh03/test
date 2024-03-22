@@ -46,6 +46,9 @@ Route::get("/ql_sach/thongke","App\Http\Controllers\BookController@thongke");
 #test git
 Route::get("/test_chucnang","App\Http\Controllers\ViDuController@chucnang");
 
+#Lynxinchao
+Route::get("/test_chucnang1","App\Http\Controllers\ViDuController@chucnang1");
+
 
 
     
