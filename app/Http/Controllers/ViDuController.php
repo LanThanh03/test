@@ -69,4 +69,10 @@ class ViDuController extends Controller{
         }
         return view("bai4.ketqua", compact('sinhvien'));
     }
+
+    #test git
+    function chucnang(){
+        return view('bai3.form');
+    }
+
 }
