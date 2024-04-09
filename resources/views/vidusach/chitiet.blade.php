@@ -11,7 +11,11 @@
 <h4>{{$data->tieu_de}}</h4>
     <div class='info'>
         <div>
-            <img src="{{asset('book_image/'.$data->file_anh_bia)}}" width="200px" height="200px">
+        @if(file_exists(public_path('storage/' . $data->file_anh_bia)))
+                <img src="{{ asset('storage/' .$data->file_anh_bia) }}" width='200px' height='200px'><br>
+            @elseif(file_exists(public_path('book_image/' . $data->file_anh_bia)))
+                <img src="{{ asset('book_image/' .$data->file_anh_bia) }}" width='200px' height='200px'><br>
+            @endif
         </div>
         <div>
             Nhà cung cấp: <b>{{$data->nha_cung_cap}}</b><br>
